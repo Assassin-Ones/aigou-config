@@ -1,0 +1,11 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+  instance:
+    prefer-ip-address: true #开启ip注册到eureka服务列表
+server:
+  port: 3333
+spring:
+  application:
+    name: plat-service
