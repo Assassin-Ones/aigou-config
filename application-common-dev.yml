@@ -1,0 +1,16 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+  instance:
+    prefer-ip-address: true #开启ip注册到eureka服务列表
+server:
+  port: 3335
+spring:
+  application:
+    name: aigou-common
+  datasource:
+    data-password: 123456
+    data-username: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///aigou?userUnicode=true&characterEncoding=utf8
